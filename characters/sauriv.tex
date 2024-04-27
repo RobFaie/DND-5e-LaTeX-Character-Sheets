@@ -1,0 +1,236 @@
+\documentclass[letterpaper,openany,oneside,twocolumn]{book}
+\usepackage{bookmark}
+\usepackage[justified]{dnd}
+\usepackage{ifthen}
+\usepackage{geometry}
+\usepackage{pstricks}
+
+\usepackage{dndtemplate}
+
+\setlength\oddsidemargin{\dimexpr(\paperwidth-\textwidth)/2 - 1in\relax}
+\setlength\evensidemargin{\oddsidemargin}
+
+% Headline
+\CharacterName{Sauriv}
+
+% adds only main class and total level to prevent overflow
+\Class{Barbarian 12, Cleric 1}
+\Background{Hermit}
+\PlayerName{Rob}
+\Race{Lizardfolk}
+\Alignment{Neutral}
+\XP{Milestone}
+
+% Ability scores
+\StrengthScore{18}
+\DexterityScore{18}
+\ConstitutionScore{20}
+\IntelligenceScore{9}
+\WisdomScore{14}
+\CharismaScore{12}
+
+% Ability modifiers
+\StrengthModifier{4}
+\DexterityModifier{4}
+\ConstitutionModifier{5}
+\IntelligenceModifier{-1}
+\WisdomModifier{2}
+\CharismaModifier{1}
+
+% Saving Throws
+\StrengthSavingThrowModifier{9}
+\DexteritySavingThrowModifier{9}
+\ConstitutionSavingThrowModifier{10}
+\IntelligenceSavingThrowModifier{-1}
+\WisdomSavingThrowModifier{2}
+\CharismaSavingThrowModifier{1}
+
+\AcrobaticsSkillModifier{4}
+\AnimalHandlingSkillModifier{2}
+\ArcanaSkillModifier{-1}
+\AthleticsSkillModifier{9}
+\DeceptionSkillModifier{1}
+\HistorySkillModifier{-1}
+\InsightSkillModifier{2}
+\IntimidationSkillModifier{6}
+\InvestigationSkillModifier{-1}
+\MedicineSkillModifier{7}
+\NatureSkillModifier{4}
+\PerceptionSkillModifier{2}
+\PerformanceSkillModifier{1}
+\PersuasionSkillModifier{1}
+\ReligionSkillModifier{4}
+\SleightOfHandSkillModifier{4}
+\StealthSkillModifier{4}
+\SurvivalSkillModifier{7}
+
+% Proficiencies
+\SetStrengthProficiency{1}
+\SetDexterityProficiency{1}
+\SetConstitutionProficiency{1}
+\SetIntelligenceProficiency{0}
+\SetWisdomProficiency{0}
+\SetCharismaProficiency{0}
+
+\SetAcrobaticsProficiency{0}
+\SetAnimalHandlingProficiency{0}
+\SetArcanaProficiency{0}
+\SetAthleticsProficiency{1}
+\SetDeceptionProficiency{0}
+\SetHistoryProficiency{0}
+\SetInsightProficiency{0}
+\SetIntimidationProficiency{1}
+\SetInvestigationProficiency{0}
+\SetMedicineProficiency{1}
+\SetNatureProficiency{1}
+\SetPerceptionProficiency{0}
+\SetPerformanceProficiency{0}
+\SetPersuasionProficiency{0}
+\SetReligionProficiency{1}
+\SetSleightOfHandProficiency{0}
+\SetStealthProficiency{0}
+\SetSurvivalProficiency{1}
+
+\Inspiration{}
+\Proficiency{5}
+\Perception{12}
+
+\ArmorClass{19}
+\Initiative{4}
+\Speed{40}
+\MaxHitPoints{159}
+
+
+\MaxHitDice{12d12,1d8}
+\CurrentHitDice{}
+
+\CP{}
+\SP{}
+\GP{15}
+\EP{}
+\PP{}
+
+
+\AddWeapon{Glaive}{+9}{1d10+4/s}
+
+\AddWeapon{Dagger}{+5}{1d4+3/p}
+
+\AddWeapon{Hand Crossbow}{+5}{1d6+3/p}
+
+
+\AttacksAdditional{\textbf{Armor}: Leather Armor \\ }
+
+\OtherProficienciesLanguages{\textbf{Languages:} Common, Draconic, Elvish. \\
+\textbf{Weapons}: Simple Weapons, Longsword, Hand Crossbow, Rapier, Shortsword. \\
+\textbf{Armor}: Light Armor. \\
+\textbf{Other}: Dice Set, Flute, Hand Drum, Viol, Thieves' Tools. \\}
+
+\Equipment{
+Backpack, Bedroll, Mess Kit, Tinderbox, 1 Torches,
+4 Days of Rations, Waterskin, 50 Feet of Hempen Rope, Crowbar, Viol, Costume, Candles, Grappling Hook, Disguise Kit, Thieves' Tools, 23 Crossbow Bolts, 20 Shards of Obsidian \\
+\textbf{Magic Items:} Potion of Healing, Potion of Greater Healing \\
+\textbf{Weight:} 74.02 lb \\
+\textbf{Capacity:} 165 lb
+}
+
+\PersonalityTraits{I am always calm, no matter what the situation. I never raise my voice or let my emotions control me.
+
+I would rather make a new friend than a new enemy.
+}
+
+\Ideals{Redemption. There's a spark of good in everyone. (Good)}
+
+\Bonds{Something important (a dragon's egg) was taken from me, and I aim to steal it back.}
+
+\Flaws{If there's a plan, I'll forget it. If I don't forget it, I'll ignore it.}
+
+\FeaturesTraits{
+\textbf{Features} \\
+Bardic Inspiration (2d6/LR) \\
+Criminal Contact \\
+Darkvision (60') \\
+Fey Ancestry \\
+Jack of All Trades \\
+Song of Rest (1d6)
+}
+
+
+% Appearance
+
+\Age{45}
+\Height{5'1''}
+\Weight{110~lbs}
+\Eyes{Grey}
+\Skin{Tan}
+\Hair{Red}
+
+% background
+
+\CharacterAppearance{
+\includegraphics[width=5.75cm]{characters/images/aaliyah.jpg}
+Aaliyah is a female Half-Elf Bard.
+
+}
+\AdditionalFeaturesAndTraits{
+}
+
+\Characterbackground{
+ }
+
+\Treasure{
+}
+
+\AlliesAndOrganizations{
+}
+
+\OrganizationName{
+}
+
+
+%Magic
+\SpellcastingClass{Cleric 1}
+\SpellcastingAbility{WIS}
+\SpellSaveDC{15}
+\SpellAttackBonus{+7}
+
+\FirstLevelSpellSlotsTotal{2}
+
+\FirstLevelSpellSlotA{Bane}
+\FirstLevelSpellSlotAPrepared{True}
+\FirstLevelSpellSlotB{Command}
+\FirstLevelSpellSlotBPrepared{True}
+\FirstLevelSpellSlotC{Cure Wounds}
+\FirstLevelSpellSlotCPrepared{True}
+\FirstLevelSpellSlotD{Detect Evil and Good}
+\FirstLevelSpellSlotDPrepared{True}
+\FirstLevelSpellSlotE{False Life}
+\FirstLevelSpellSlotEPrepared{True}
+\CantripSlotA{Mending}
+\CantripSlotB{Resistance}
+\CantripSlotC{Sacred Flame}
+\CantripSlotD{Spare the Dying}
+
+\newcommand{\spellsheetchoice}{\renderhalfspellsheet} %{\renderspellsheet}
+
+
+
+\begin{document}
+\newgeometry{left=0cm,right=0cm,top=0cm,bottom=0cm}
+\onecolumn
+
+
+% CHARACTER PAGE
+\pdfbookmark[0]{Character Sheet}{Character Sheet}
+\rendercharactersheet
+
+% BACKSTORY PAGE
+% \pdfbookmark[0]{Background Sheet}{Background Sheet}
+% \renderbackgroundsheet
+
+
+% SPELLCASTING PAGE
+\pdfbookmark[0]{Spellcasting Sheet}{Spellcasting Sheet}
+\spellsheetchoice
+
+
+\end{document}
